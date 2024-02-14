@@ -78,7 +78,7 @@
                   <h3 class="card-title">Más información</h3>
                 </div>
                 <div class="card-body">
-                  contenido puede ser una tabla
+                  contenido puede ser una tabla xd prueba de cambio
                 </div>
                 <div class="card-footer">
                   footer
