@@ -46,6 +46,8 @@ Route::group(['middleware' => ['admin', 'role:admin']], function() {
     Route::get('alumno/materias', [AlumnoController::class, 'materias']);
     Route::get('generarQR', [AlumnoController::class, 'generaQR']);
 
+    Route::get('Reporte', [AlumnoController::class, 'Reporte']);
+    
 });
 
 Route::group(['prefix' => 'alumno','middleware' => ['alumno', 'role:alumno']], function() {

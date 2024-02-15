@@ -1,0 +1,26 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Indisciplina;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Illuminate\Database\Seeder;
+
+class IndisciplinaSeeder extends Seeder
+{
+    /**
+     * Run the database seeds.
+     *
+     * @return void
+     */
+    public function run()
+    {
+        Indisciplina::create([ 
+                                'alumno_id'=> 1,
+                                'maestro_id'=>1,
+                                'fecha'=>"2024-01-10",
+                                ''
+                            ]);
+        
+    }
+}
