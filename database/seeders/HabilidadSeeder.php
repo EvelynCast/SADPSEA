@@ -18,9 +18,7 @@ class HabilidadSeeder extends Seeder
         Habilidad::create([ 'nombre'=>'PROGRAMACIÓN']);
         Habilidad::create([ 'nombre'=>'ROBÓTICA']);
         Habilidad::create([ 'nombre'=>'DANZA']);
-        Habilidad::create([ 'nombre'=>'QUÍMICA']);
         Habilidad::create([ 'nombre'=>'HABILIDAD MATEMÁTICA']);
-        Habilidad::create([ 'nombre'=>'AJEDREZ']);
         Habilidad::create([ 'nombre'=>'INGLÉS']);
 
     }

@@ -18,9 +18,8 @@ return new class extends Migration
             $table->unsignedBigInteger('alumno_id');
             $table->unsignedBigInteger('maestro_id');
             $table->date('fecha');
-            $table->string('tipo');
             $table->string('motivo');
-            $table->string('sancion');
+            $table->string('comentario');
 
             $table->timestamps();
             $table->softDeletes();

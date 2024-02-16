@@ -19,8 +19,11 @@ class IndisciplinaSeeder extends Seeder
                                 'alumno_id'=> 1,
                                 'maestro_id'=>1,
                                 'fecha'=>"2024-01-10",
-                                ''
+                                'motivo'=>"Falta de respeto al maestro",
+                                'comentario'=>"El alumno le dijo groserías al maestro",
                             ]);
+        
+
         
     }
 }

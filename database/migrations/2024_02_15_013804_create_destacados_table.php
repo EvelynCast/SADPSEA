@@ -20,9 +20,7 @@ return new class extends Migration
             $table->unsignedBigInteger('habilidad_id');
 
             $table->date('fecha');
-            $table->string('tipo');
-            $table->string('motivo');
-            $table->string('sancion');
+            $table->string('comentario')->nullable();
 
             $table->timestamps();
             $table->softDeletes();
