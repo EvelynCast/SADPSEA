@@ -1,40 +1,16 @@
 @extends('app')
 
 @section('home')
-    <h5 class="mb-2">Información</h5>
+    <h1 class="mb-2">Inicio</h1>
     <div class="row">
-        <div class="col-md-3 col-sm-6 col-12">
-            <div class="info-box">
-            <span class="info-box-icon bg-info"><i class="fa fa-users"></i></span>
-
-            <div class="info-box-content">
-                <span class="info-box-text">Clientes</span>
-                <span class="info-box-number">9</span>
-            </div>
-            <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-        </div>
+        
         <!-- /.col -->
         <div class="col-md-3 col-sm-6 col-12">
             <div class="info-box">
-            <span class="info-box-icon bg-success"><i class="fas fa-tools"></i></span>
+              <img src="{{ url('images/icono_lista.png') }}" width="23%" alt="" class="brand-image" style="">
 
             <div class="info-box-content">
-                <span class="info-box-text">Servicios</span>
-                <span class="info-box-number">8</span>
-            </div>
-            <!-- /.info-box-content -->
-            </div>
-            <!-- /.info-box -->
-        </div>
-        <!-- /.col -->
-        <div class="col-md-3 col-sm-6 col-12">
-            <div class="info-box">
-            <span class="info-box-icon bg-warning"><i class="fas fa-cogs"></i></span>
-
-            <div class="info-box-content">
-                <span class="info-box-text">Mantenimientos</span>
+                <span class="info-box-text">Grupos Asignados</span>
                 <span class="info-box-number">5</span>
             </div>
             <!-- /.info-box-content -->
@@ -44,17 +20,18 @@
         <!-- /.col -->
         <div class="col-md-3 col-sm-6 col-12">
             <div class="info-box">
-            <span class="info-box-icon bg-danger"><i class="fas fa-dollar-sign"></i></span>
+              <img src="{{ url('images/icono_note.png') }}" width="21%" alt="" class="brand-image" style="">
 
             <div class="info-box-content">
-                <span class="info-box-text">Pagos</span>
-                <span class="info-box-number">2</span>
+                <span class="info-box-text">Reportes Generados</span>
+                <span class="info-box-number">25</span>
             </div>
             <!-- /.info-box-content -->
             </div>
             <!-- /.info-box -->
         </div>
         <!-- /.col -->
+       
     </div>
     <br>
     <h5 class="mb-2">Registros</h5>

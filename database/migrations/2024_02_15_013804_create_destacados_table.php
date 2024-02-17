@@ -16,7 +16,7 @@ return new class extends Migration
         Schema::create('destacados', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('alumno_id');
-            $table->unsignedBigInteger('maestro_id');
+            $table->unsignedBigInteger('user_id');
             $table->unsignedBigInteger('habilidad_id');
 
             $table->date('fecha');
@@ -26,7 +26,7 @@ return new class extends Migration
             $table->softDeletes();
 
             $table->foreign('alumno_id')->references('id')->on('alumnos');
-            $table->foreign('maestro_id')->references('id')->on('maestros');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->foreign('habilidad_id')->references('id')->on('habilidades');
 
         });

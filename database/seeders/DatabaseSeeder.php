@@ -14,6 +14,8 @@ use Database\Seeders\HabilidadSeeder;
 use Database\Seeders\MaestroSeeder;
 use Database\Seeders\IndisciplinaSeeder;
 use Database\Seeders\DestacadoSeeder;
+use Database\Seeders\Grupo;
+use Database\Seeders\Alumno_grupo;
 
 class DatabaseSeeder extends Seeder
 {
@@ -35,5 +37,7 @@ class DatabaseSeeder extends Seeder
         $this->call(MaestroSeeder::class);
         $this->call(IndisciplinaSeeder::class);
         $this->call(DestacadoSeeder::class);
+        $this->call(Grupo::class);
+        $this->call(Alumno_grupo::class);
     }
 }

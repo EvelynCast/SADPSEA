@@ -23,19 +23,19 @@
 <body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed layout-footer-fixed sidebar-mini sidebar-collapse">
     <div class="wrapper">
         <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-dark border-bottom-0" style="background-color: #065698;">
+        <nav class="main-header navbar navbar-expand navbar-dark border-bottom-0" style="background-color: #950000;">
             <!-- Left navbar links -->
             <ul class="navbar-nav">
               <li class="nav-item">
                 <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
               </li>
               <li class="nav-item d-none d-sm-inline-block">
-                <a href="{{url('/')}}" class="nav-link">Principal</a>
+                <a href="{{url('/')}}" class="nav-link">Sistema de reportes</a>
               </li>
             </ul>
 
             <!-- SEARCH FORM -->
-            <!-- <form class="form-inline ml-3">
+            <form class="form-inline ml-3">
               <div class="input-group input-group-sm">
                 <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
                 <div class="input-group-append">
@@ -44,12 +44,12 @@
                   </button>
                 </div>
               </div>
-            </form> -->
+            </form>
 
             <!-- Right navbar links -->
             <ul class="navbar-nav ml-auto">
               <!-- Messages Dropdown Menu -->
-              <!-- <li class="nav-item dropdown">
+              <li class="nav-item dropdown">
                 <a class="nav-link" data-toggle="dropdown" href="#">
                   <i class="far fa-comments"></i>
                   <span class="badge badge-danger navbar-badge">3</span>
@@ -57,7 +57,7 @@
                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                   <a href="#" class="dropdown-item"> -->
                     <!-- Message Start -->
-                    <!-- <div class="media">
+                    <div class="media">
                       <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
                       <div class="media-body">
                         <h3 class="dropdown-item-title">
@@ -67,13 +67,13 @@
                         <p class="text-sm">Call me whenever you can...</p>
                         <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
                       </div>
-                    </div> -->
+                    </div> 
                     <!-- Message End -->
-                  <!-- </a>
+                  </a>
                   <div class="dropdown-divider"></div>
-                  <a href="#" class="dropdown-item"> -->
+                  <a href="#" class="dropdown-item">
                     <!-- Message Start -->
-                    <!-- <div class="media">
+                    <div class="media">
                       <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
                       <div class="media-body">
                         <h3 class="dropdown-item-title">
@@ -83,7 +83,7 @@
                         <p class="text-sm">I got your message bro</p>
                         <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
                       </div>
-                    </div> -->
+                    </div>
                     <!-- Message End -->
                   <!-- </a>
                   <div class="dropdown-divider"></div>
@@ -107,7 +107,7 @@
                 </div>
               </li> -->
               <!-- Notifications Dropdown Menu -->
-              {{-- <li class="nav-item dropdown">
+              <li class="nav-item dropdown">
                 <a class="nav-link" data-toggle="dropdown" href="#">
                   <i class="far fa-bell"></i>
                   <span class="badge badge-warning navbar-badge">00</span>
@@ -122,7 +122,7 @@
                   <div class="dropdown-divider"></div>
                   <a href="#" class="dropdown-item dropdown-footer">Ver todas las notificaciones</a>
                 </div>
-              </li> --}}
+              </li>
               <li class="nav-item">
                 <a class="nav-link" data-widget="fullscreen" href="#" role="button">
                   <i class="fas fa-expand-arrows-alt"></i>
@@ -136,10 +136,9 @@
         <aside class="main-sidebar elevation-4 sidebar-light-warning">
           <!-- Brand Logo -->
           <a href="{{asset('/home')}}" class="brand-link">
-            <img src="{{ url('images/AdminLTELogo.png') }}" alt="baessh" class="brand-image img-circle elevation-3" style="opacity: .8">
-            <span class="brand-text font-weight-light">Proyecto base</span>
+            <img src="{{ url('images/dgeti_logo.png') }}"  class="brand-image" style="widh:100%;">
+          
           </a>
-
           <!-- Sidebar -->
           <div class="sidebar">
             <!-- Sidebar user panel (optional) -->
@@ -212,23 +211,23 @@
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                      <i class="nav-icon fas fa-tools""></i>
+                      <i class="nav-icon fas fa-tools"></i>
                       <p>
-                         Otro menu
+                         Reportes
                         <i class="fas fa-angle-left right"></i>
                       </p>
                     </a>
                     <ul class="nav nav-treeview">
                       <li class="nav-item">
-                        <a href="{{asset('')}}" class="nav-link">
+                        <a href="{{asset('RegistrarReporteIndisciplina')}}" class="nav-link">
                           <i class="far fa-circle nav-icon"></i>
-                          <p>Consultar</p>
+                          <p>Registrar Indisciplina</p>
                         </a>
                       </li>
                       <li class="nav-item">
-                        <a href="{{asset('')}}" class="nav-link">
+                        <a href="{{asset('RegistrarReporteDestacado')}}" class="nav-link">
                           <i class="far fa-circle nav-icon"></i>
-                          <p>Registrar</p>
+                          <p>Registrar Destacado</p>
                         </a>
                       </li>
                     </ul>
@@ -273,7 +272,7 @@
         <!-- /.control-sidebar -->
         <!-- Main Footer -->
         <footer class="main-footer">
-          <strong>Tu proyecto Web App &copy; 2023.</strong>
+          <strong>Tu proyecto Web App &copy; 2024.</strong>
           derechos reservados.
           <div class="float-right d-none d-sm-inline-block">
             <b>Version</b> 1.0

@@ -17,7 +17,7 @@ class DestacadoSeeder extends Seeder
     {
         Destacado::create([ 
             'alumno_id'=> 1,
-            'maestro_id'=>1,
+            'user_id'=>1,
             'habilidad_id'=>4,
             'fecha'=>"2024-02-14",
             'comentario'=>"Es bueno resolviendo problemas en poco tiempo.",
