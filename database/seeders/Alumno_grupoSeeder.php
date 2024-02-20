@@ -14,6 +14,25 @@ class Alumno_grupoSeeder extends Seeder
      */
     public function run()
     {
-        //
+        Alumno_grupo::create([ 
+            'grupo_id'=> 1,
+            'alumno_id'=>1,
+        ]);
+        Alumno_grupo::create([ 
+            'grupo_id'=> 1,
+            'alumno_id'=>5,
+        ]);
+        Alumno_grupo::create([ 
+            'grupo_id'=> 1,
+            'alumno_id'=>23,
+        ]);
+        Alumno_grupo::create([ 
+            'grupo_id'=> 1,
+            'alumno_id'=>5,
+        ]);
+        Alumno_grupo::create([ 
+            'grupo_id'=> 1,
+            'alumno_id'=>11,
+        ]);
     }
 }

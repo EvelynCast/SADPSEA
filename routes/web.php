@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\AlumnoController;
 use App\Http\Controllers\MaestroController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\GrupoController;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 /*
@@ -49,6 +50,7 @@ Route::group(['middleware' => ['admin', 'role:admin']], function() {
 
     Route::get('RegistrarReporteIndisciplina', [MaestroController::class, 'RegistrarIndisciplina']);
     Route::get('RegistrarReporteDestacado', [MaestroController::class, 'RegistrarDestacado']);
+    Route::get('ListaGrupo/{id}', [GrupoController::class, 'ListaGrupo']);
     
 });
 

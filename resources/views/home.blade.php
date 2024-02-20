@@ -34,31 +34,22 @@
        
     </div>
     <br>
-    <h5 class="mb-2">Registros</h5>
     <div class="row">
         <div class="col-sm-6">
             <div class="card card-outline card-warning">
                 <div class="card-header">
-                  <h3 class="card-title">Otra información</h3>
+                  <h3 class="card-title">Grupos</h3>
                 </div>
                 <div class="card-body">
-                  Contenido
-                </div>
-                <div class="card-footer">
-                  Footer
-                </div>
-              </div>
-        </div>
-        <div class="col-sm-6">
-            <div class="card card-outline card-danger">
-                <div class="card-header">
-                  <h3 class="card-title">Más información</h3>
+                  <a href="{{ url('ListaGrupo') }}/1">
+                    <button type="submit" class="btn btn-primary" style="background-color: #950000; border:0px" >6AVP</button>
+                  </a>
                 </div>
                 <div class="card-body">
-                  contenido puede ser una tabla xd prueba de cambio
+                  <button type="submit" class="btn btn-primary" style="background-color: #950000; border:0px" >6AVE</button>
                 </div>
-                <div class="card-footer">
-                  footer
+                <div class="card-body">
+                  <button type="submit" class="btn btn-primary" style="background-color: #950000; border:0px" >6AVO</button>
                 </div>
               </div>
         </div>
