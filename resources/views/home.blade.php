@@ -46,9 +46,11 @@
                   </a>
                 </div>
                 <div class="card-body">
+                  <a href="{{ url('ListaGrupo') }}/2">
                   <button type="submit" class="btn btn-primary" style="background-color: #950000; border:0px" >6AVE</button>
                 </div>
                 <div class="card-body">
+                  <a href="{{ url('ListaGrupo') }}/3">
                   <button type="submit" class="btn btn-primary" style="background-color: #950000; border:0px" >6AVO</button>
                 </div>
               </div>

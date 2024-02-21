@@ -28,11 +28,11 @@ class Alumno_grupoSeeder extends Seeder
             'alumno_id'=>23,
         ]);
         Alumno_grupo::create([ 
-            'grupo_id'=> 1,
+            'grupo_id'=> 2,
             'alumno_id'=>5,
         ]);
         Alumno_grupo::create([ 
-            'grupo_id'=> 1,
+            'grupo_id'=> 3,
             'alumno_id'=>11,
         ]);
     }
