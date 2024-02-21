@@ -8,5 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class Grupo extends Model
 {
     use HasFactory;
-    protected $table="alumnos";
+    protected $table="grupos";
+
+    public function alumnos(){
+        return $this->hasMany(Alumno_grupo::class)->with('alumno');
+    }
 }

@@ -48,4 +48,10 @@ class AlumnoController extends Controller
         return QrCode::size(300)->generate('Aquí va La URL que se va a acceder');
     }
 
+    public function consultarPerfil($id){
+        $alumno = Alumno::find($id);
+
+        return view('perfilAlumno', compact('alumno'));
+    }
+
 }

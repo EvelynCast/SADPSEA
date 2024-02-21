@@ -10,7 +10,29 @@
 @stop
 
 @section('contenido')
-    @foreach ( $alumnos as $a )
-        <option value="{{ $a->id }}">{{ $a->nombre }}</option> 
-    @endforeach
+<table class="table table-hover">
+    <thead>
+        <tr>
+            <th>Num</th>
+            <th>Numero de control</th>
+            <th>Nombre</th>
+            <th>Ver perfil</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach ($grupo->alumnos as $a)
+        <tr>
+            <td>{{ $a->alumno->id}}</td>
+            <td>{{ $a->alumno->numero_control}}</td>
+            <td>{{ $a->alumno->nombre}}</td>
+            <td>
+                <a href="{{ url('consultarPerfil') }}/{{ $a->alumno->id }}" class="btn btn-default">
+                    <img src="{{ asset('images/icono_note.png') }}" alt="" width="20px">
+                </a>
+            </td>
+        </tr>
+        @endforeach
+    </tbody>
+</table>        
+    
 @stop
