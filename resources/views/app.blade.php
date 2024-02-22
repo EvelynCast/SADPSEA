@@ -143,7 +143,7 @@
         <aside class="main-sidebar elevation-4 sidebar-light-warning">
             <!-- Brand Logo -->
             <a href="{{ asset('/home') }}" class="brand-link">
-                <img src="{{ url('images/dgeti_logo.png') }}" class="brand-image" style="widh:100%;">
+                <img src="{{ url('images/LogoDG.png') }}" class="brand-image" style="widh:100%;">
 
             </a>
             <!-- Sidebar -->
@@ -213,29 +213,6 @@
                                     <a href="{{ asset('/alumno/registrar') }}" class="nav-link">
                                         <i class="far fa-circle nav-icon"></i>
                                         <p>Registrar</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-tools"></i>
-                                <p>
-                                    Reportes
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="{{ asset('RegistrarReporteIndisciplina') }}" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Registrar Indisciplina</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="{{ asset('RegistrarReporteDestacado') }}" class="nav-link">
-                                        <i class="far fa-circle nav-icon"></i>
-                                        <p>Registrar Destacado</p>
                                     </a>
                                 </li>
                             </ul>

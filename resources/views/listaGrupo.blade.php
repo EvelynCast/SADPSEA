@@ -1,12 +1,12 @@
 @extends('app')
 
 @section('titulo')
-    <h1>6AVP</h1>
+    <h1>{{ $grupo->nombre }}</h1>
 @stop
 
 @section('breadcrum')
     <li class="breadcrumb-item"><a href="{{ url('/home') }}">Inicio</a></li>
-    <li class="breadcrumb-item active">Blank page</li>
+    <li class="breadcrumb-item active">{{ $grupo->nombre }}</li>
 @stop
 
 @section('contenido')

@@ -11,7 +11,7 @@
 
             <div class="info-box-content">
                 <span class="info-box-text">Grupos Asignados</span>
-                <span class="info-box-number">5</span>
+                <span class="info-box-number">3</span>
             </div>
             <!-- /.info-box-content -->
             </div>

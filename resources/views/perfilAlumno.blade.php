@@ -30,25 +30,12 @@
                 </tr>
                 </tbody>
             </table>
-            <ul class="nav nav-treeview">
-                <li class="nav-item">
-                    <a href="{{ asset('RegistrarReporteIndisciplina') }}" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Registrar Indisciplina</p>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="{{ asset('RegistrarReporteDestacado') }}" class="nav-link">
-                        <i class="far fa-circle nav-icon"></i>
-                        <p>Registrar Destacado</p>
-                    </a>
-                </li>
-            </ul>
+            <a href="{{ asset('RegistrarReporteIndisciplina') }}/{{ $alumno->id }}" class="btn btn-primary">Reportar Indisciplina</a><br><br>
+            <a href="{{ asset('RegistrarReporteDestacado') }}/{{ $alumno->id }}" class="btn btn-primary">Reportar Destacado</a>
         </div>
     </div>
 </center>
 </div>
-    <a href="" class="btn btn-primary">Reportar</a>
 @stop
 
 

@@ -48,10 +48,11 @@ Route::group(['middleware' => ['admin', 'role:admin']], function() {
     Route::get('alumno/materias', [AlumnoController::class, 'materias']);
     Route::get('generarQR', [AlumnoController::class, 'generaQR']);
 
-    Route::get('RegistrarReporteIndisciplina', [MaestroController::class, 'RegistrarIndisciplina']);
-    Route::get('RegistrarReporteDestacado', [MaestroController::class, 'RegistrarDestacado']);
+    Route::get('RegistrarReporteIndisciplina/{id}', [MaestroController::class, 'RegistrarIndisciplina']);
+    Route::get('RegistrarReporteDestacado/{id}', [MaestroController::class, 'RegistrarDestacado']);
     Route::get('ListaGrupo/{id}', [GrupoController::class, 'ListaGrupo']);
     Route::get('consultarPerfil/{id}', [AlumnoController::class, 'consultarPerfil']);    
+    Route::post('guardarReporteIndisciplina', [MaestroController::class, 'guardarReporteIndisciplina']);    
     
 });
 

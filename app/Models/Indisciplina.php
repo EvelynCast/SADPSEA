@@ -8,4 +8,5 @@ use Illuminate\Database\Eloquent\Model;
 class Indisciplina extends Model
 {
     use HasFactory;
+    protected $fillable=['alumno_id', 'user_id', 'fecha', 'motivo', 'comentario'];
 }
