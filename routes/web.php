@@ -53,6 +53,7 @@ Route::group(['middleware' => ['admin', 'role:admin']], function() {
     Route::get('ListaGrupo/{id}', [GrupoController::class, 'ListaGrupo']);
     Route::get('consultarPerfil/{id}', [AlumnoController::class, 'consultarPerfil']);    
     Route::post('guardarReporteIndisciplina', [MaestroController::class, 'guardarReporteIndisciplina']);    
+    Route::post('guardarReporteDestacado', [MaestroController::class, 'guardarReporteDestacado']);    
     
 });
 

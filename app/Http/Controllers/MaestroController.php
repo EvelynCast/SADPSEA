@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use PDF;
 use App\Models\Habilidad;
 use App\Models\Indisciplina;
+use App\Models\Destacado;
 use Illuminate\Http\Request;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
@@ -25,6 +26,17 @@ class MaestroController extends Controller
             'user_id'=>1,
             'fecha'=>$datos->input('fecha'),
             'motivo'=>$datos->input('motivo'),
+            'comentario'=>$datos->input('comentario'),
+        ]);
+        return redirect('/home');
+    }
+
+    public function guardarReporteDestacado(Request $datos){
+        Destacado::create([ 
+            'alumno_id'=>$datos->input('alumno_id'),
+            'user_id'=>1,
+            'habilidad_id'=>1,
+            'fecha'=>$datos->input('fecha'),
             'comentario'=>$datos->input('comentario'),
         ]);
         return redirect('/home');

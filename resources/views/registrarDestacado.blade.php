@@ -1,16 +1,16 @@
 @extends('app')
 
 @section('titulo')
-    <h1>Registrar Reporte Destacado</h1>
+    <h1>Registrar Habilidad</h1>
 @stop
 
 @section('breadcrum')
     <li class="breadcrumb-item"><a href="{{ url('/home') }}">Inicio</a></li>
-    <li class="breadcrumb-item active">Registrar Reporte Destacado</li>
+    <li class="breadcrumb-item active">Registrar Habilidad</li>
 @stop
 
 @section('contenido')
-<form>
+<form method="POST" action="{{ url('guardarReporteIndisciplina') }}">
     
     <div class="form-group">
         <label for="habilidad">Habilidad</label>
@@ -30,6 +30,6 @@
         <input type="text" class="form-control" id="" placeholder="Escribe un comentario">
       </div>
     
-    <button type="submit" class="btn btn-primary" style="background-color: #950000; border:0px" >Registrar</button>
+    <button type="submit" class="btn btn-primary" style="background-color: #950000; border:0px" >Registrar </button>
   </form>
 @stop

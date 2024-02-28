@@ -1,12 +1,12 @@
 @extends('app')
 
 @section('titulo')
-    <h1>Registrar Reporte Indisciplina</h1>
+    <h1>Registrar Indisciplina</h1>
 @stop
 
 @section('breadcrum')
     <li class="breadcrumb-item"><a href="{{ url('/home') }}">Inicio</a></li>
-    <li class="breadcrumb-item active">Registrar Reporte Indisciplina</li>
+    <li class="breadcrumb-item active">Registrar Indisciplina</li>
 @stop
 
 @section('contenido')

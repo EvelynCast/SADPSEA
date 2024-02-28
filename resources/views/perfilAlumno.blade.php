@@ -30,8 +30,8 @@
                 </tr>
                 </tbody>
             </table>
-            <a href="{{ asset('RegistrarReporteIndisciplina') }}/{{ $alumno->id }}" class="btn btn-primary" style="background-color: #950000; border:0px" >Reportar Indisciplina</a><br><br>
-            <a href="{{ asset('RegistrarReporteDestacado') }}/{{ $alumno->id }}" class="btn btn-primary" style="background-color: #950000; border:0px" >Reportar Destacado</a>
+            <a href="{{ asset('RegistrarReporteIndisciplina') }}/{{ $alumno->id }}" class="btn btn-primary" style="background-color: #950000; border:0px" >Registrar Indisciplina </a><br><br>
+            <a href="{{ asset('RegistrarReporteDestacado') }}/{{ $alumno->id }}" class="btn btn-primary" style="background-color: #950000; border:0px" >Registrar Habilidad</a>
         </div>
     </div>
 </center>
