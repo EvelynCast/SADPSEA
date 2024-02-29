@@ -18,6 +18,7 @@
                 <th>Fecha</th>
                 <th>Motivo</th>
                 <th>Comentario</th>
+                <th>Borrar</th>
             </tr>
         </thead>
         <tbody>
@@ -27,10 +28,14 @@
                     <td>{{ $i->fecha }}</td>
                     <td>{{ $i->motivo }}</td>
                     <td>{{ $i->comentario }}</td>
+                    <td>
+                        <a href="{{ url('eliminarReporteIndisciplina') }}/{{ $i->id }}" class="btn btn-danger">Borrar</a>
+                    </td>
                 </tr>
             @endforeach
         </tbody>
-    </table>
+    </table><br>
+    <hr>
     <h2>Destacados</h2>
     <table class="table table-hover">
         <thead>

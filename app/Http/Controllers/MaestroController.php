@@ -58,4 +58,11 @@ class MaestroController extends Controller
 
         return redirect('historial');
     }
+
+    public function eliminarReporteIndisciplina($id){
+        $reporte = Indisciplina::find($id);
+        $reporte->delete();
+
+        return redirect('historial');
+    }
 }
