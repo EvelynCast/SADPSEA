@@ -20,6 +20,23 @@ class HabilidadSeeder extends Seeder
         Habilidad::create([ 'nombre'=>'DANZA']);
         Habilidad::create([ 'nombre'=>'HABILIDAD MATEMÁTICA']);
         Habilidad::create([ 'nombre'=>'INGLÉS']);
+        Habilidad::create([ 'nombre'=>'TEATRO']);
+        Habilidad::create([ 'nombre'=>'PINTURA Y DIBUJO']);
+        Habilidad::create([ 'nombre'=>'DANZA FOLKLÓRICA']);
+        Habilidad::create([ 'nombre'=>'FOTOGRAFÍA']);
+        Habilidad::create([ 'nombre'=>'ARTESANÍAS']);
+        Habilidad::create([ 'nombre'=>'CANTO']);
+        Habilidad::create([ 'nombre'=>'DECLAMACIÓN']);
+        Habilidad::create([ 'nombre'=>'BANDA DE GUERRA']);
+        Habilidad::create([ 'nombre'=>'ESCOLTA']);
+        Habilidad::create([ 'nombre'=>'AJEDREZ']);
+        Habilidad::create([ 'nombre'=>'ORATORIA']);
+        Habilidad::create([ 'nombre'=>'MÚSICA']);
+        Habilidad::create([ 'nombre'=>'LITERATURA']);
+        Habilidad::create([ 'nombre'=>'VOLEIBOL']);
+        Habilidad::create([ 'nombre'=>'BASQUETBOL']);
+        Habilidad::create([ 'nombre'=>'FUTBOL']);
+        
 
     }
 }
