@@ -17,6 +17,8 @@
             <th>Numero de control</th>
             <th>Nombre</th>
             <th>Ver perfil</th>
+            <th>Destacado</th>
+            <th>Indisciplina</th>
         </tr>
     </thead>
     <tbody>
@@ -29,6 +31,19 @@
                 <a href="{{ url('consultarPerfil') }}/{{ $a->alumno->id }}" class="btn btn-default">
                     <img src="{{ asset('images/icono_note.png') }}" alt="" width="20px">
                 </a>
+            </td>
+            <td>
+                {{ count($a->alumno->reportesDestacados) }}
+                @if(count($a->alumno->reportesDestacados) == 1)
+                    insignia bronce
+                @elseif(count($a->alumno->reportesDestacados) == 2)
+                    insignia plata
+                @elseif(count($a->alumno->reportesDestacados) >= 3)
+                    insignia ORO
+                @endif
+            </td>
+            <td>
+                {{ count($a->alumno->reportesIndisciplina) }}
             </td>
         </tr>
         @endforeach

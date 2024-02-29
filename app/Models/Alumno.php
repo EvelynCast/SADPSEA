@@ -15,4 +15,12 @@ class Alumno extends Model
     public function materias(){
         return $this->hasMany(AlumnoMateria::class, 'alumno_id', 'id')->with('materia');
     }
+
+    public function reportesDestacados(){
+        return $this->hasMany(Destacado::class);
+    }
+
+    public function reportesIndisciplina(){
+        return $this->hasMany(Indisciplina::class);
+    }
 }
