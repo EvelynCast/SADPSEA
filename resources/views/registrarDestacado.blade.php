@@ -10,8 +10,9 @@
 @stop
 
 @section('contenido')
-<form method="POST" action="{{ url('guardarReporteIndisciplina') }}">
-    
+<form method="POST" action="{{ url('guardarReporteDestacado') }}">
+  @csrf
+  <input name="alumno_id" type="hidden" value="{{ $id }}">
     <div class="form-group">
         <label for="habilidad">Habilidad</label>
         <select  class="form-control" name="habilidad_id" id="">
@@ -23,11 +24,11 @@
     </div> 
     <div class="form-group">
       <label for="fecha">Fecha</label>
-      <input type="date" class="form-control" id="" placeholder="Selecciona una fecha">
+      <input name="fecha" type="date" class="form-control" id="" placeholder="Selecciona una fecha">
     </div>
     <div class="form-group">
         <label for="texto">Comentario</label>
-        <input type="text" class="form-control" id="" placeholder="Escribe un comentario">
+        <input name="comentario" type="text" class="form-control" id="" placeholder="Escribe un comentario">
       </div>
     
     <button type="submit" class="btn btn-primary" style="background-color: #950000; border:0px" >Registrar </button>

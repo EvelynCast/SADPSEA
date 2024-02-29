@@ -28,17 +28,17 @@ class MaestroController extends Controller
             'motivo'=>$datos->input('motivo'),
             'comentario'=>$datos->input('comentario'),
         ]);
-        return redirect('/home');
+        return redirect('/historial');
     }
 
     public function guardarReporteDestacado(Request $datos){
         Destacado::create([ 
             'alumno_id'=>$datos->input('alumno_id'),
             'user_id'=>1,
-            'habilidad_id'=>1,
+            'habilidad_id'=>$datos->input('habilidad_id'),
             'fecha'=>$datos->input('fecha'),
             'comentario'=>$datos->input('comentario'),
         ]);
-        return redirect('/home');
+        return redirect('/historial');
     }
 }
