@@ -2,11 +2,13 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Alumno;
 use PDF;
 use App\Models\Habilidad;
 use App\Models\Indisciplina;
 use App\Models\Destacado;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use SimpleSoftwareIO\QrCode\Facades\QrCode;
 
 class MaestroController extends Controller
@@ -40,5 +42,20 @@ class MaestroController extends Controller
             'comentario'=>$datos->input('comentario'),
         ]);
         return redirect('/home');
+    }
+
+    public function historial(){
+
+        $indisciplina = Indisciplina::where('user_id', Auth::user()->id)->get();
+        $destacado = Destacado::where('user_id', Auth::user()->id)->get();
+
+        return view('historial', compact('indisciplina', 'destacado'));
+    }
+
+    public function eliminarReporteDestacado($id){
+        $reporte = Destacado::find($id);
+        $reporte->delete();
+
+        return redirect('historial');
     }
 }
