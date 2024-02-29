@@ -217,6 +217,14 @@
                                 </li>
                             </ul>
                         </li>
+                        <li class="nav-item active">
+                            <a href="{{ asset('/historial') }}" class="nav-link">
+                                <i class="nav-icon fas fa-file"></i>
+                                <p>
+                                    Historial de reportes
+                                </p>
+                            </a>
+                        </li>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->

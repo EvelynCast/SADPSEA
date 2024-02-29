@@ -54,7 +54,9 @@ Route::group(['middleware' => ['admin', 'role:admin']], function() {
     Route::get('consultarPerfil/{id}', [AlumnoController::class, 'consultarPerfil']);    
     Route::post('guardarReporteIndisciplina', [MaestroController::class, 'guardarReporteIndisciplina']);    
     Route::post('guardarReporteDestacado', [MaestroController::class, 'guardarReporteDestacado']);    
-    
+
+    Route::get('historial', [MaestroController::class, 'historial']);
+    Route::get('eliminarReporteDestacado/{id}', [MaestroController::class, 'eliminarReporteDestacado']);
 });
 
 Route::group(['prefix' => 'alumno','middleware' => ['alumno', 'role:alumno']], function() {
