@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Proyecto Base</title>
+    <title>SADPSEA</title>
     <link rel="icon" type="image/x-icon" href="{{ url('images/logohb.ico') }}">
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
@@ -188,7 +188,7 @@
                      with font-awesome or any other icon font library -->
                         <li class="nav-item active">
                             <a href="{{ asset('/home') }}" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
+                                <i class="nav-icon fas fa-home"></i>
                                 <p>
                                     Inicio
                                 </p>

@@ -35,21 +35,23 @@
             <td>
                 {{ count($a->alumno->reportesDestacados) }}
                 @if(count($a->alumno->reportesDestacados) == 1)
-                    <img src="images/E-BRONCE.png" alt="">
+                    <img src="{{asset('images/E-BRONCE.png')}}" alt="" width="50px">
                 @elseif(count($a->alumno->reportesDestacados) == 2)
-                    <img src="images/E-PLATA.png" alt="">
+                    <img src="{{asset('images/E-PLATA.png')}}" alt="" width="50px">
                 @elseif(count($a->alumno->reportesDestacados) >= 3)
-                    <img src="images/E-ORO.png" alt="">
+                    <img src="{{asset('images/E-ORO.png')}}" alt="" width="50px">
                 @endif
             </td>
             <td>
                 {{ count($a->alumno->reportesIndisciplina) }}
-                @if(count($a->alumno->reportesIndisciplina) == 1)
-                    <img src="images/IN_AMARILLO.png" alt="">
+                @if(count($a->alumno->reportesIndisciplina) == 0)
+                    <img src="{{asset('images/IN_VERDE.png')}}" alt="" width="50px">
+                @elseif(count($a->alumno->reportesIndisciplina) == 1)
+                    <img src="{{asset('images/IN_AMARILLO.png')}}" alt="" width="50px">
                 @elseif(count($a->alumno->reportesIndisciplina) == 2)
-                    <img src="images/IN_NARANJA.png" alt="">
+                    <img src="{{asset('images/IN_NARANJA.png')}}" alt="" width="50px">
                 @elseif(count($a->alumno->reportesIndisciplina) >= 3)
-                    <img src="images/IN_ROJO.png" alt="">
+                    <img src="{{asset('images/IN_ROJO.png')}}" alt="" width="50px">
                 @endif
             </td>
         </tr>
