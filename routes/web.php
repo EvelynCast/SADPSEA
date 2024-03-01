@@ -42,7 +42,7 @@ Route::group(['middleware' => ['maestro', 'role:maestro']], function() {
     Route::get('/reporte/pdf/{id}', [AlumnoController::class, 'reporteAlumnoPdf']);
 
     //Rutas de administrador
-    Route::get('/homeAdministrador', [HomeController::class, 'homeAdministrador']);
+    Route::get('/homeAdministrador', [HomeController::class, 'homeMaestro']);
 
     //Ruta de ejemplo para obtener detalle de calificacion
     Route::get('alumno/materias', [AlumnoController::class, 'materias']);
@@ -61,9 +61,7 @@ Route::group(['middleware' => ['maestro', 'role:maestro']], function() {
 });
 
 Route::group(['prefix' => 'administrador','middleware' => ['administrador', 'role:administrador']], function() {
-    Route::get('/home', function () {
-        return view('alumno.home');
-    });
+    Route::get('/home', [HomeController::class, 'homeAdministrador']);
 });
 
 require __DIR__.'/auth.php';
