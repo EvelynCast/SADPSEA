@@ -27,7 +27,7 @@ Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
-Route::group(['middleware' => ['admin', 'role:admin']], function() {
+Route::group(['middleware' => ['maestro', 'role:maestro']], function() {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
@@ -60,7 +60,7 @@ Route::group(['middleware' => ['admin', 'role:admin']], function() {
     Route::get('eliminarReporteIndisciplina/{id}', [MaestroController::class, 'eliminarReporteIndisciplina']);
 });
 
-Route::group(['prefix' => 'alumno','middleware' => ['alumno', 'role:alumno']], function() {
+Route::group(['prefix' => 'administrador','middleware' => ['administrador', 'role:administrador']], function() {
     Route::get('/home', function () {
         return view('alumno.home');
     });

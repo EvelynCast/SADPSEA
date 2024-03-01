@@ -19,12 +19,12 @@ class UserSeeder extends Seeder
             'name'  => 'Luis Carlos',
             'email' => 'santillan.itc@gmail.com',
             'password' => bcrypt('carlos123')
-        ])->assignRole('admin');
+        ])->assignRole('maestro');
 
         User::create([
             'name'  => 'Francisco Lopez',
             'email' => 'francisco@mail.com',
             'password' => bcrypt('francisco123')
-        ])->assignRole('alumno');
+        ])->assignRole('administrador');
     }
 }
