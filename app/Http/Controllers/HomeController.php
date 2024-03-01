@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Noticia;
 use Illuminate\Http\Request;
+use App\Models\Destacado;
+use App\Models\Indisciplina;
 use PHPUnit\Framework\Error\Notice;
 use App\Models\Indisciplina;
 use App\Models\Destacado;
@@ -11,7 +13,9 @@ use App\Models\Destacado;
 class HomeController extends Controller
 {
     public function home(){
-        return view('home');
+        $destacados=Destacado::count();
+        $indisciplina=Indisciplina::count();
+        return view('home', compact('destacados', 'indisciplina'));
     }
 
     public function homeMaestro(){
