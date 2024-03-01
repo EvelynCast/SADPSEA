@@ -35,15 +35,22 @@
             <td>
                 {{ count($a->alumno->reportesDestacados) }}
                 @if(count($a->alumno->reportesDestacados) == 1)
-                    insignia bronce
+                    <img src="images/E-BRONCE.png" alt="">
                 @elseif(count($a->alumno->reportesDestacados) == 2)
-                    insignia plata
+                    <img src="images/E-PLATA.png" alt="">
                 @elseif(count($a->alumno->reportesDestacados) >= 3)
-                    insignia ORO
+                    <img src="images/E-ORO.png" alt="">
                 @endif
             </td>
             <td>
                 {{ count($a->alumno->reportesIndisciplina) }}
+                @if(count($a->alumno->reportesIndisciplina) == 1)
+                    <img src="images/IN_AMARILLO.png" alt="">
+                @elseif(count($a->alumno->reportesIndisciplina) == 2)
+                    <img src="images/IN_NARANJA.png" alt="">
+                @elseif(count($a->alumno->reportesIndisciplina) >= 3)
+                    <img src="images/IN_ROJO.png" alt="">
+                @endif
             </td>
         </tr>
         @endforeach
