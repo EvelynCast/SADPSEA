@@ -7,8 +7,6 @@ use Illuminate\Http\Request;
 use App\Models\Destacado;
 use App\Models\Indisciplina;
 use PHPUnit\Framework\Error\Notice;
-use App\Models\Indisciplina;
-use App\Models\Destacado;
 
 class HomeController extends Controller
 {
