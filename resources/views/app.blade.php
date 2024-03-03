@@ -187,7 +187,7 @@
                         <!-- Add icons to the links using the .nav-icon class
                      with font-awesome or any other icon font library -->
                         <li class="nav-item active">
-                            <a href="{{ asset('/home') }}" class="nav-link">
+                            <a href="{{ url('/home') }}" class="nav-link">
                                 <i class="nav-icon fas fa-home"></i>
                                 <p>
                                     Inicio
@@ -265,8 +265,7 @@
         <!-- /.control-sidebar -->
         <!-- Main Footer -->
         <footer class="main-footer">
-            <strong>Tu proyecto Web App &copy; 2024.</strong>
-            derechos reservados.
+            <strong>Software de Apoyo Docente para Seguimiento Escolar de Alumnos. (v1.0)</strong>
             <div class="float-right d-none d-sm-inline-block">
                 <b>Version</b> 1.0
             </div>

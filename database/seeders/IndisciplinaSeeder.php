@@ -23,6 +23,118 @@ class IndisciplinaSeeder extends Seeder
                                 'comentario'=>"El alumno le dijo groserías al maestro",
                             ]);
         
+        Indisciplina::create([ 
+                                'alumno_id'=> 1,
+                                'user_id'=>1,
+                                'fecha'=>"2024-03-01",
+                                'motivo'=>"Falta de respeto al maestro",
+                                'comentario'=>"El alumno le dijo groserías al maestro",
+                            ]);
+
+        Indisciplina::create([ 
+                                'alumno_id'=> 1,
+                                'user_id'=>1,
+                                'fecha'=>"2024-01-10",
+                                'motivo'=>"Falta de respeto al maestro",
+                                'comentario'=>"El alumno le dijo groserías al maestro",
+                            ]);
+        
+        Indisciplina::create([ 
+                                'alumno_id'=> 1,
+                                'user_id'=>1,
+                                'fecha'=>"2024-01-10",
+                                'motivo'=>"Falta de respeto al maestro",
+                                'comentario'=>"El alumno le dijo groserías al maestro",
+                            ]);
+
+        Indisciplina::create([ 
+                                'alumno_id'=> 1,
+                                'user_id'=>1,
+                                'fecha'=>"2024-01-10",
+                                'motivo'=>"Falta de respeto al maestro",
+                                'comentario'=>"El alumno le dijo groserías al maestro",
+                            ]);
+
+        Indisciplina::create([ 
+                                'alumno_id'=> 1,
+                                'user_id'=>1,
+                                'fecha'=>"2024-01-10",
+                                'motivo'=>"Falta de respeto al maestro",
+                                'comentario'=>"El alumno le dijo groserías al maestro",
+                            ]);
+        
+        Indisciplina::create([ 
+                                'alumno_id'=> 1,
+                                'user_id'=>1,
+                                'fecha'=>"2024-01-10",
+                                'motivo'=>"Falta de respeto al maestro",
+                                'comentario'=>"El alumno le dijo groserías al maestro",
+                            ]);
+
+        Indisciplina::create([ 
+                                'alumno_id'=> 1,
+                                'user_id'=>1,
+                                'fecha'=>"2024-01-10",
+                                'motivo'=>"Falta de respeto al maestro",
+                                'comentario'=>"El alumno le dijo groserías al maestro",
+                            ]);
+        
+        Indisciplina::create([ 
+                                'alumno_id'=> 1,
+                                'user_id'=>1,
+                                'fecha'=>"2024-01-10",
+                                'motivo'=>"Falta de respeto al maestro",
+                                'comentario'=>"El alumno le dijo groserías al maestro",
+                            ]);
+
+        Indisciplina::create([ 
+                                'alumno_id'=> 1,
+                                'user_id'=>1,
+                                'fecha'=>"2024-01-10",
+                                'motivo'=>"Falta de respeto al maestro",
+                                'comentario'=>"El alumno le dijo groserías al maestro",
+                            ]);
+
+        Indisciplina::create([ 
+                                'alumno_id'=> 1,
+                                'user_id'=>1,
+                                'fecha'=>"2024-01-10",
+                                'motivo'=>"Falta de respeto al maestro",
+                                'comentario'=>"El alumno le dijo groserías al maestro",
+                            ]);
+        
+        Indisciplina::create([ 
+                                'alumno_id'=> 1,
+                                'user_id'=>1,
+                                'fecha'=>"2024-01-10",
+                                'motivo'=>"Falta de respeto al maestro",
+                                'comentario'=>"El alumno le dijo groserías al maestro",
+                            ]);
+
+        Indisciplina::create([ 
+                                'alumno_id'=> 1,
+                                'user_id'=>1,
+                                'fecha'=>"2024-01-10",
+                                'motivo'=>"Falta de respeto al maestro",
+                                'comentario'=>"El alumno le dijo groserías al maestro",
+                            ]);
+        
+        Indisciplina::create([ 
+                                'alumno_id'=> 1,
+                                'user_id'=>1,
+                                'fecha'=>"2024-01-10",
+                                'motivo'=>"Falta de respeto al maestro",
+                                'comentario'=>"El alumno le dijo groserías al maestro",
+                            ]);
+
+        Indisciplina::create([ 
+                                'alumno_id'=> 1,
+                                'user_id'=>1,
+                                'fecha'=>"2024-01-10",
+                                'motivo'=>"Falta de respeto al maestro",
+                                'comentario'=>"El alumno le dijo groserías al maestro",
+                            ]);
+        
 
         
     }
