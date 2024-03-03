@@ -1,13 +1,13 @@
 @extends('app')
 
 @section('titulo')
-    <h1>Página en blanco</h1>
+    <h1>Perfil del Alumno</h1>
 @stop
 
 @section('contenido')
 <div style="text-align:center;"> <center>
     <div class="card" style="width: 18rem;">
-        <img src="images/user_imagen" class="card-img-top" alt="...">
+        <img src="{{ asset('images/iconos_3.png') }}" class="card-img-top" alt="..." style="width: 30%; margin: auto;">
         <div class="card-body">
             <table class="table">
                 <tbody>

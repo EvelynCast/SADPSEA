@@ -21,7 +21,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <div class="wrapper">
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+  <nav class="main-header navbar navbar-expand navbar-dark border-bottom-0" style="background-color: #950000;">
     <div class="container">
       <a href="" class="navbar-brand">
         <span class="brand-text font-weight-light">SADPSEA</span>
@@ -43,31 +43,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <li><a href="#" class="dropdown-item">Reportes </a></li>
               <li><a href="#" class="dropdown-item">Otra opción</a></li>
 
-              <li class="dropdown-divider"></li>
+              <li class="dropdown-divider"0></li>
+              <li class="nav-item">
+                <div class="info">
+                  <a class="d-block" href="{{ route('logout') }}"
+                      onclick="event.preventDefault();
+                        document.getElementById('logout-form').submit();">
+                      {{ __('Cerrar sesión') }}
+                  </a>
 
-              <!-- Level two dropdown-->
-              <li class="dropdown-submenu dropdown-hover">
-                <a id="dropdownSubMenu2" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">Hover for action</a>
-                <ul aria-labelledby="dropdownSubMenu2" class="dropdown-menu border-0 shadow">
-                  <li>
-                    <a tabindex="-1" href="#" class="dropdown-item">level 2</a>
-                  </li>
-
-                  <!-- Level three dropdown-->
-                  <li class="dropdown-submenu">
-                    <a id="dropdownSubMenu3" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="dropdown-item dropdown-toggle">level 2</a>
-                    <ul aria-labelledby="dropdownSubMenu3" class="dropdown-menu border-0 shadow">
-                      <li><a href="#" class="dropdown-item">3rd level</a></li>
-                      <li><a href="#" class="dropdown-item">3rd level</a></li>
-                    </ul>
-                  </li>
-                  <!-- End Level three -->
-
-                  <li><a href="#" class="dropdown-item">level 2</a></li>
-                  <li><a href="#" class="dropdown-item">level 2</a></li>
-                </ul>
+                  <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                      @csrf
+                  </form>
+              </div>
               </li>
-              <!-- End Level two -->
             </ul>
           </li>
         </ul>
@@ -163,6 +152,24 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
             <i class="fas fa-th-large"></i>
           </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle"><span>{{ Auth::user()->name }}</span></a>
+          <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+            <li class="nav-item">
+              <div class="info">
+                <a class="d-block dropdown-item" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
+                      document.getElementById('logout-form').submit();">
+                    {{ __('Cerrar sesión') }}
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+                    @csrf
+                </form>
+            </div>
+            </li>
+          </ul>
         </li>
       </ul>
     </div>

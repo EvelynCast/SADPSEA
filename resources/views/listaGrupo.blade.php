@@ -33,9 +33,8 @@
                 </a>
             </td>
             <td>
-                {{ count($a->alumno->reportesDestacados) }}
                 @if(count($a->alumno->reportesDestacados) == 1)
-                    <img src="{{asset('images/E-BRONCE.png')}}" alt="" width="50px">
+                    <img src="{{asset('images/E-BRONCE.png')}}" alt="" width="50px" data-toggle="tooltip" data-placement="top" title="Insignia BRONCE">
                 @elseif(count($a->alumno->reportesDestacados) == 2)
                     <img src="{{asset('images/E-PLATA.png')}}" alt="" width="50px">
                 @elseif(count($a->alumno->reportesDestacados) >= 3)
@@ -43,7 +42,6 @@
                 @endif
             </td>
             <td>
-                {{ count($a->alumno->reportesIndisciplina) }}
                 @if(count($a->alumno->reportesIndisciplina) == 0)
                     <img src="{{asset('images/IN_VERDE.png')}}" alt="" width="50px">
                 @elseif(count($a->alumno->reportesIndisciplina) == 1)

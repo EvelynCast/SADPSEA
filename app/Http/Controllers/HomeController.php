@@ -28,4 +28,14 @@ class HomeController extends Controller
 
         return view('homeAdministrador', compact('indisciplina', 'destacado'));
     }
+
+    public function finalizarIndisciplina($id){
+        $reporte=Indisciplina::find($id);
+
+        $reporte->estado=1;
+        $reporte->save();
+
+        return redirect('/administrador/home');
+    }
+    
 }

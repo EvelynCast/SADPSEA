@@ -64,7 +64,7 @@ class IndisciplinaSeeder extends Seeder
                             ]);
         
         Indisciplina::create([ 
-                                'alumno_id'=> 1,
+                                'alumno_id'=> 9,
                                 'user_id'=>1,
                                 'fecha'=>"2024-01-10",
                                 'motivo'=>"Falta de respeto al maestro",
@@ -72,7 +72,7 @@ class IndisciplinaSeeder extends Seeder
                             ]);
 
         Indisciplina::create([ 
-                                'alumno_id'=> 1,
+                                'alumno_id'=> 10,
                                 'user_id'=>1,
                                 'fecha'=>"2024-01-10",
                                 'motivo'=>"Falta de respeto al maestro",
@@ -80,7 +80,7 @@ class IndisciplinaSeeder extends Seeder
                             ]);
         
         Indisciplina::create([ 
-                                'alumno_id'=> 1,
+                                'alumno_id'=> 8,
                                 'user_id'=>1,
                                 'fecha'=>"2024-01-10",
                                 'motivo'=>"Falta de respeto al maestro",
@@ -88,7 +88,7 @@ class IndisciplinaSeeder extends Seeder
                             ]);
 
         Indisciplina::create([ 
-                                'alumno_id'=> 1,
+                                'alumno_id'=> 5,
                                 'user_id'=>1,
                                 'fecha'=>"2024-01-10",
                                 'motivo'=>"Falta de respeto al maestro",
@@ -96,7 +96,7 @@ class IndisciplinaSeeder extends Seeder
                             ]);
 
         Indisciplina::create([ 
-                                'alumno_id'=> 1,
+                                'alumno_id'=> 4,
                                 'user_id'=>1,
                                 'fecha'=>"2024-01-10",
                                 'motivo'=>"Falta de respeto al maestro",
@@ -104,7 +104,7 @@ class IndisciplinaSeeder extends Seeder
                             ]);
         
         Indisciplina::create([ 
-                                'alumno_id'=> 1,
+                                'alumno_id'=> 4,
                                 'user_id'=>1,
                                 'fecha'=>"2024-01-10",
                                 'motivo'=>"Falta de respeto al maestro",
@@ -112,7 +112,7 @@ class IndisciplinaSeeder extends Seeder
                             ]);
 
         Indisciplina::create([ 
-                                'alumno_id'=> 1,
+                                'alumno_id'=> 3,
                                 'user_id'=>1,
                                 'fecha'=>"2024-01-10",
                                 'motivo'=>"Falta de respeto al maestro",
@@ -120,7 +120,7 @@ class IndisciplinaSeeder extends Seeder
                             ]);
         
         Indisciplina::create([ 
-                                'alumno_id'=> 1,
+                                'alumno_id'=> 2,
                                 'user_id'=>1,
                                 'fecha'=>"2024-01-10",
                                 'motivo'=>"Falta de respeto al maestro",
@@ -128,7 +128,7 @@ class IndisciplinaSeeder extends Seeder
                             ]);
 
         Indisciplina::create([ 
-                                'alumno_id'=> 1,
+                                'alumno_id'=> 2,
                                 'user_id'=>1,
                                 'fecha'=>"2024-01-10",
                                 'motivo'=>"Falta de respeto al maestro",

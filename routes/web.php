@@ -62,6 +62,8 @@ Route::group(['middleware' => ['maestro', 'role:maestro']], function() {
 
 Route::group(['prefix' => 'administrador','middleware' => ['administrador', 'role:administrador']], function() {
     Route::get('/home', [HomeController::class, 'homeAdministrador']);
+    Route::get('/finalizarIndisciplina/{id}', [HomeController::class, 'finalizarIndisciplina']);
+    Route::get('/finalizarIndisciplina/{id}', [HomeController::class, 'finalizarIndisciplina']);
 });
 
 require __DIR__.'/auth.php';

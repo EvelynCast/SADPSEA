@@ -21,6 +21,7 @@ return new class extends Migration
 
             $table->date('fecha');
             $table->string('comentario')->nullable();
+            $table->integer('estado')->default(0);
 
             $table->timestamps();
             $table->softDeletes();
