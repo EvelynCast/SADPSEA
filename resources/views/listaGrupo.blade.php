@@ -36,20 +36,20 @@
                 @if(count($a->alumno->reportesDestacados) == 1)
                     <img src="{{asset('images/E-BRONCE.png')}}" alt="" width="50px" data-toggle="tooltip" data-placement="top" title="Insignia BRONCE">
                 @elseif(count($a->alumno->reportesDestacados) == 2)
-                    <img src="{{asset('images/E-PLATA.png')}}" alt="" width="50px">
+                    <img src="{{asset('images/E-PLATA.png')}}" alt="" width="50px" data-toggle="tooltip" data-placement="top" title="Insignia PLATA">
                 @elseif(count($a->alumno->reportesDestacados) >= 3)
-                    <img src="{{asset('images/E-ORO.png')}}" alt="" width="50px">
+                    <img src="{{asset('images/E-ORO.png')}}" alt="" width="50px" data-toggle="tooltip" data-placement="top" title="Insignia ORO">
                 @endif
             </td>
             <td>
                 @if(count($a->alumno->reportesIndisciplina) == 0)
-                    <img src="{{asset('images/IN_VERDE.png')}}" alt="" width="50px">
+                    <img src="{{asset('images/IN_VERDE.png')}}" alt="" width="50px" data-toggle="tooltip" data-placement="top" title="Sin reporte">
                 @elseif(count($a->alumno->reportesIndisciplina) == 1)
-                    <img src="{{asset('images/IN_AMARILLO.png')}}" alt="" width="50px">
+                    <img src="{{asset('images/IN_AMARILLO.png')}}" alt="" width="50px" data-toggle="tooltip" data-placement="top" title="1 reporte">
                 @elseif(count($a->alumno->reportesIndisciplina) == 2)
-                    <img src="{{asset('images/IN_NARANJA.png')}}" alt="" width="50px">
+                    <img src="{{asset('images/IN_NARANJA.png')}}" alt="" width="50px" data-toggle="tooltip" data-placement="top" title="2 reportes">
                 @elseif(count($a->alumno->reportesIndisciplina) >= 3)
-                    <img src="{{asset('images/IN_ROJO.png')}}" alt="" width="50px">
+                    <img src="{{asset('images/IN_ROJO.png')}}" alt="" width="50px" data-toggle="tooltip" data-placement="top" title="3 o más reportes">
                 @endif
             </td>
         </tr>
